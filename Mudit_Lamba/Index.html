@@ -1,0 +1,392 @@
+<!DOCTYPE html >
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="favicon_io/site.webmanifest">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			.navbar {
+				margin-bottom: 0;
+				border-radius: 0;
+				background: rgba(38, 38, 38, 0.9);
+			}
+
+			body {
+				position: relative;
+			}
+
+			li {
+				font-size: 12px;
+			}
+
+			.p {
+				font-size: 16px;
+			}
+
+			.btn-primary,
+			.btn-primary:active,
+			.btn-primary:visited {
+				background-color: black !important;
+				border-color: white;
+			}
+
+			.btn-primary:hover {
+				background-color: white !important;
+				color: black;
+				transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				-ms-transition: all 1s ease;
+			}
+
+			.jumbotron {
+				z-index: 9;
+				width: 100%;
+				height: auto;
+				position: absolute;
+				margin: auto;
+				background: rgba(13, 13, 13, 0.5);
+				top: 30%;
+				text-align: center;
+				color: white;
+			}
+
+			#jumbotronEducation {
+				top: 10%;
+				position: auto;
+				width: 93%;
+				height: 450px;
+				background-color: white;
+				text-align: center;
+				color: #0073e6;
+			}
+
+			.col-sm-4 {
+				height: 200px;
+			}
+
+			#col-sm-4Education {
+				height: 450px;
+			}
+
+			.panel-default {
+				height: 200px;
+				color: #737373;
+				text-align: center;
+				padding: 5px;
+			}
+
+			#panelExperience {
+				height: 150px;
+				color: #737373;
+				text-align: left;
+				padding: 5px;
+			}
+
+			.carousel .item {
+				height: 700px;
+			}
+
+			.item img {
+				width: 100%;
+				height: 700px;
+				margin: auto;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			.affix {
+				top: 0;
+				width: 100%;
+				z-index: 9999 !important;
+			}
+
+			.affix + .container-fluid {
+				padding-top: 70px;
+			}
+
+			.footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 22px;
+				background: #333333;
+				color: white;
+				text-align: center;
+				z-index: 999;
+			}
+			#about {padding-top:50px;min-height:700px;color: white; background-color: black;}
+			#portfolio {padding-top:50px;min-height:700px;color: #fff; background-color: #884dff;}
+			#experience {padding-top:50px;min-height:700px;color: #fff; background-color: #9f9fdf;}
+			#education {padding-top:50px;min-height:700px;color: #fff; background-color: #0059b3;}
+		</style>
+		<title>Mudit Lamba</title>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a href="#"><img src="favicon_io/muditlogo.png" width="50" height="50"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#education">Education</a></li>
+				</ul>
+				<u1 class="nav navbar-nav navbar-right" style="padding-right: 25px">
+					<li><a href="https://www.linkedin.com/in/mudit-lamba-b186b247/"><span class="fa fa-linkedin fa-lg"></span></a></li>
+					<li><a href="https://github.com/MuditLamba"><span class="fa fa-github fa-lg"></span></a></li>
+					<li><a href="https://www.instagram.com/muditlamba/"><span class="fa fa-instagram fa-lg"></span></a></li>
+					<li><a href="https://twitter.com/mudit_lamba"><span class="fa fa-twitter fa-lg"></span></a></li>
+					<li><a href="mailto: mlamba.22@berkeley.edu"><span class="fa fa-envelope fa-lg"></span></a></li>
+					<li><a href="Mudit_Lamba_Resume.pdf"><span class="fa fa-file fa-lg"></span></a></li>
+				</u1>
+			</div>
+		</nav>
+
+		<!--
+		<div class="jumbotron" style="height:500px">
+			<div class="container text-center">
+				<br></br>
+				<h1>Mudit Lamba</h1>
+				<p>Hello! Welcome to my website!</p>
+				<div class="container-fluid" style="height:250px">
+					<img src="profile.png" class="img-circle" alt="profile" width="256" height="244">
+				</div>
+			</div>
+		</div>
+	-->
+		<div id="introCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#introCarousel" data-slide-to="1"></li>
+				<li data-target="#introCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<div class="jumbotron">
+				<h1 class="text-light">Mudit Lamba</h1>
+				<p>Understand, Research, Implement, Evaluate, Repeat.</p>
+			</div>
+
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="campus.jpeg" alt="ucberkeley campus">
+				</div>
+
+				<div class="item">
+					<img src="friends.JPG" alt="Mudit and Friends">
+				</div>
+
+				<div class="item">
+					<img src="programming.jpg" alt="Programming">
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$("#introCarousel").carousel({interval: 5000, pause: false});
+		</script>
+
+		<div id="about" class="container-fluid">
+			<div class="container text-center">
+				<div class="container-fluid" style="height:250px">
+					<img src="profile.png" class="img-circle" alt="profile" width="250" height="218">
+					<h2>Hello! Welcome to my website!</h2>
+				</div>
+				<br></br>
+				<p class="p">My name is Mudit Lamba and I'm currently living in the Bay Area in California. I am a third-year undergraduate student at <strong>UC Berkeley</strong> studying <strong>Electrical Engineering and Computer Sciences</strong>. I will be graduating May 2022. I created this website as a personal project to learn more about JavaScript, jQuery, and web design. Over the last few months I have learned a lot about the Agile Programming method and software-as-a-service software development. My ambition is to design, innovate, and consult on the development of end-to-end products with a special interest in software-as-a-service and other cloud computing applications.</p>
+				<p class="p">Through all my summer experiences, I have become particulary interested in software development. Last summer I worked with Asadel Technologies to create an image analysis program that uses matrix filters and operations to identify different kinds of Pneumonia resulting from the novel Coronavirus.</p>
+				<p class="p">I am looking for new opportunities for <strong>Spring and Summer 2021</strong>! If you like what you see, then please reach out to me on any of my social media platforms or via email (linked in the top right corner)!</p>
+				<br></br>
+				<a href="Mudit_Lamba_Resume.pdf" class="btn btn-primary" role="button">Resume</a>
+			</div>
+		</div>
+		<div id="portfolio" class="container-fluid">
+			<div class="container text-center">
+				<h1>Projects</h1>
+				<br></br>
+			</div>
+			<div class="row" style="height: 225px;">
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<h3>Personal Website</h3>
+						<p>In an effort to brand myself, I deployed design principles to create this website. My goal was to apply JavaScript, jQuery, HTML, and CSS fundamentals to create a product that is a representation of my desire to learn and my passion for programming.</p>
+						<a href="https://github.com/MuditLamba" class="btn btn-primary" role="button">Learn More</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<h3>IMARECON®</h3>
+						<p>Worked with a team on creating an image analysis program that uses matrix filters and operations to identify different kinds of Pneumonia resulting from the novel Coronavirus. Using the IMARECON platform, we were able to train software to classify from images.</p>
+						<a href="https://www.asadeltech.com/imarecon.php" class="btn btn-primary" role="button">Learn More</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<h3>Numc</h3>
+						<p>Re-created the Numpy library in C and used SIMD instructions, OpenMP multithreading, and unrolling to optimize matrix operations. Used library functions to handle python and C code translation. The challenge with this project was actually optimizing the code to run as fast and efficiently as possible as matrix operations on large matrices requires a lot of computation.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="height: 225px;">
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<h3>CS61CPU</h3>
+						<p>Used Logisim to design a complete CPU from scratch that could handle up to 40 RISC-V instructions. Learned about logic and circuit design as well as components of SISD CPUs and SIMD CPUs. CPU was rigorously tested with assembly language files and came complete with ALU, regFile, and control logic. Learned about SIMD instructions and its impact on efficiency as well as multithreading.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<h3>CS61Classify</h3>
+						<p>Programmed assembly language files in RISC-V to handle matrix operations as well as implement an algorithm to classify letters and digits based on images captured in Matrices using basic AI fundamentals. Learned a lot about efficient programming and the importance of reducing instructions in coding.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<h3>Hangperson Game</h3>
+						<p>In the process of creating a working web app using Ruby on Rails. The website is a version of hangperson. Features include cookie generation, session management, and more. We use an MVC architecture to develop the app.</p>
+						<a href="https://github.com/MuditLamba" class="btn btn-primary" role="button">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="experience" class="container-fluid">
+			<br></br>
+			<div class="row" style="height:150px">
+				<div class="col-sm-6">
+					<div id="panelExperience" class="panel panel-default">
+						<div class="panel-heading">
+							<h6><strong>Project RISHI, UC Berkeley Chapter</strong></h6>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>Programmed points system using Excel to automatically record and calculate each club member’s performance and designed stable matching-based program to assign members to project groups based on ranked preferences</li>
+								<li>Fostered collaborative work environment on zoom through planned online activities and lead online recruiting</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div id="panelExperience" class="panel panel-default">
+						<div class="panel-heading"><h6><strong>Asadel Technologies</strong></h6></div>
+						<div class="panel-body">
+							<ul>
+								<li>Worked with IMARECON team remotely to develop image analysis software to classify kinds of Pneumonia</li>
+								<li>Used Python, Matrix filters, and Matrix Operations to manipulate image data to find patterns in skin images</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="height:150px">
+				<div class="col-sm-6">
+					<div id="panelExperience" class="panel panel-default">
+						<div class="panel-heading"><h6><strong>UC Berkeley EECS Department</strong></h6></div>
+						<div class="panel-body">
+							<ul>
+								<li>Taught and assisted students at UC Berkeley in the course Data Structures (CS61B)</li>
+								<li>Guided students to understand labs and homework assignments on data structures such as arrays and graphs</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div id="panelExperience" class="panel panel-default">
+						<div class="panel-heading"><h6><strong>NEC Technologies India Pvt. Ltd.</strong></h6></div>
+						<div class="panel-body">
+							<ul>
+								<li><strong>Tender Value ~$25M</strong>: Worked with team on system integration creating a cost-effective SMART city solution</li>
+								<li>Devised strategy to reduce company costs and maximize profit while keeping project price competitive</li>
+								<li>Demoed CCTV, intelligent traffic management, smart parking, and other technologies</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="height:150px">
+				<div class="col-sm-6">
+					<div id="panelExperience" class="panel panel-default">
+						<div class="panel-heading"><h6><strong>BECIL Plus 91 Security Solutions</strong></h6></div>
+						<div class="panel-body">
+							<ul>
+								<li><strong>Tender Value ~$20M</strong>: Worked with team to pitch SMART City solution for Rajasthan (10+ cities and airports)</li>
+								<li>Brainstormed incident reconstruction, CCTV video analysis, gait recognition, social media analysis solutions</li>
+								<li>Created presentation of solutions and demoed software which won the contract from Indian Government</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div id="panelExperience" class="panel panel-default">
+						<div class="panel-heading"><h6><strong>Times of India NGO Teach India</strong></h6></div>
+						<div class="panel-body">
+							<ul>
+								<li>Traveled with a team to survey the NGO’s beneficiaries on the impact of the English teaching program</li>
+								<li>Recorded data on 180+ impoverished students with reported improved incomes of ~$1200 - $2400 per annum</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="education" class="container-fluid">
+			<div class="row" style="background-color: #ffc61a">
+				<div class="col-sm-12">
+					<h2 style="color: #0073e6"><strong>University of California, Berkeley</strong></h2>
+					<h5 style="color: #0073e6">B.S. Electrical Engineering and Computer Sciences, <i>Grad May 2022</i></h5>
+				</div>
+			</div>
+			<div class="row">
+				<div id="col-sm-4Education" class="col-sm-4">
+					<div id="jumbotronEducation" class="jumbotron">
+						<h3>CS Coursework</h3>
+						<p style="font-size: 14px"><strong>CS61A:</strong> The structure and interpretation of computer programs</p>
+						<p style="font-size: 14px"><strong>CS61B:</strong> Data Structures</p>
+						<p style="font-size: 14px"><strong>CS61C:</strong> Computer Architecture</p>
+						<p style="font-size: 14px"><strong>CS169:</strong> Introduction to Software Engineering</p>
+						<p style="font-size: 14px"><strong>Engin 7:</strong> MATLAB Programming</p>
+						<p style="font-size: 14px"><strong>CS170:</strong> (Spring 2021) Efficient Algorithms</p>
+						<p style="font-size: 14px"><strong>CS188:</strong> (Spring 2021) Introduction to Artificial Intelligence</p>
+					</div>
+				</div>
+				<div id="col-sm-4Education" class="col-sm-4">
+					<div id="jumbotronEducation" class="jumbotron">
+						<h3>Math/Science Coursework</h3>
+						<p style="font-size: 14px"><strong>Math 53:</strong> Multivariable Calculus</p>
+						<p style="font-size: 14px"><strong>Math 54:</strong> Linear Algebra and Differential Equations</p>
+						<p style="font-size: 14px"><strong>Physics 7A:</strong> Physics for Engineers I</p>
+						<p style="font-size: 14px"><strong>Physics 7B:</strong> Physics for Engineers II</p>
+						<p style="font-size: 14px"><strong>Data 8:</strong> (Spring 2021) Foundations of Data Science</p>
+					</div>
+				</div>
+				<div id="col-sm-4Education" class="col-sm-4">
+					<div id="jumbotronEducation" class="jumbotron">
+						<h3>El Eng Coursework</h3>
+						<p style="font-size: 14px"><strong>EECS16A:</strong> Designing Information Devices and Systems</p>
+						<p style="font-size: 14px"><strong>EECS16B:</strong> (Spring 2021) Designing Information Devices and Systems II</p>
+					</div>
+				</div>
+		</div>
+
+		<div class="footer">
+			<p>© 2020, Created by Mudit Lamba</p>
+		</div>
+	</body>
+</html>
